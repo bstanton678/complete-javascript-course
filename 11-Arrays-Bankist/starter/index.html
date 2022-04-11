@@ -22,6 +22,7 @@
       <form class="login">
         <input
           type="text"
+               aria-label="User"
           placeholder="user"
           class="login__input login__input--user"
         />
@@ -29,10 +30,11 @@
         <input
           type="text"
           placeholder="PIN"
+               aria-label="Pin"
           maxlength="4"
           class="login__input login__input--pin"
         />
-        <button class="login__btn">&rarr;</button>
+        <button aria-label="Login" class="login__btn">&rarr;</button>
       </form>
     </nav>
 
@@ -49,20 +51,20 @@
       </div>
 
       <!-- MOVEMENTS -->
-      <div class="movements">
-        <div class="movements__row">
+      <ul class="movements">
+        <li class="movements__row">
           <div class="movements__type movements__type--deposit">2 deposit</div>
           <div class="movements__date">3 days ago</div>
           <div class="movements__value">4 000€</div>
-        </div>
-        <div class="movements__row">
+        </li>
+        <li class="movements__row">
           <div class="movements__type movements__type--withdrawal">
             1 withdrawal
           </div>
           <div class="movements__date">24/01/2037</div>
           <div class="movements__value">-378€</div>
-        </div>
-      </div>
+        </li>
+      </ul>
 
       <!-- SUMMARY -->
       <div class="summary">
@@ -72,7 +74,7 @@
         <p class="summary__value summary__value--out">0000€</p>
         <p class="summary__label">Interest</p>
         <p class="summary__value summary__value--interest">0000€</p>
-        <button class="btn--sort">&downarrow; SORT</button>
+        <button aria-pressed="false" class="btn--sort">&downarrow; SORT</button>
       </div>
 
       <!-- OPERATION: TRANSFERS -->
